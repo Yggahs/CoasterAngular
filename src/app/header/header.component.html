@@ -1,11 +1,31 @@
-<nav class="navbar navbar-expand-lg bg-danger">
+<nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"
-      ><img src="\assets\icons8-homer-simpson-100.png"
+      ><img src="\assets\icons8-homer-simpson-100.png" width="30" height="24"
     /></a>
-    <div>
-      <button class="btn btn-outline-light mx-2">Ordina la cena</button>
-      <button class="btn btn-outline-light mx-2">Guarda il menù</button>
+    <button
+      class="navbar-toggler collapsed"
+      (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="responsiveNavbar"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      id="responsiveNavbar"
+      class="collapse navbar-collapse"
+      [ngbCollapse]="isCollapsed"
+    >
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ordina la cena</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Guarda il menù</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
