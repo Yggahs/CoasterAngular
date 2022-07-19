@@ -9,9 +9,22 @@ import { CarouselSectionComponent } from './carousel-section/carousel-section.co
 import { MinorCarouselOneComponent } from './minor-carousel-one/minor-carousel-one.component';
 import { MinorCarouselTwoComponent } from './minor-carousel-two/minor-carousel-two.component';
 import { TripleIconSectionComponent } from './triple-icon-section/triple-icon-section.component';
+import { BrandsCarouselComponent } from './brands-carousel/brands-carousel.component';
+import { MapComponent } from './map/map.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, CarouselSectionComponent, MinorCarouselOneComponent, MinorCarouselTwoComponent, TripleIconSectionComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    CarouselSectionComponent,
+    MinorCarouselOneComponent,
+    MinorCarouselTwoComponent,
+    TripleIconSectionComponent,
+    BrandsCarouselComponent,
+    MapComponent,
+    FooterComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, NgbCollapseModule],
   providers: [],
   bootstrap: [AppComponent],
