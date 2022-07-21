@@ -10,8 +10,9 @@ import { MinorCarouselOneComponent } from './minor-carousel-one/minor-carousel-o
 import { MinorCarouselTwoComponent } from './minor-carousel-two/minor-carousel-two.component';
 import { TripleIconSectionComponent } from './triple-icon-section/triple-icon-section.component';
 import { BrandsCarouselComponent } from './brands-carousel/brands-carousel.component';
-import { MapComponent } from './map/map.component';
+
 import { FooterComponent } from './footer/footer.component';
+import { OpenlayermapComponent } from './openlayermap/openlayermap.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     MinorCarouselTwoComponent,
     TripleIconSectionComponent,
     BrandsCarouselComponent,
-    MapComponent,
     FooterComponent,
+    OpenlayermapComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, NgbCollapseModule],
   providers: [],

@@ -1,0 +1,12 @@
+<ng-template #popContent>Bellaraga</ng-template>
+<ng-template #popTitle>bellaraga 2</ng-template>
+
+<div id="map" class="map">
+  <div
+    id="popup"
+    [ngbPopover]="popContent"
+    popoverTitle="popTitle"
+    #popover="ngbPopover"
+    triggers="manual"
+  ></div>
+</div>
