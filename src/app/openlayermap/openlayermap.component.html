@@ -1,12 +1,26 @@
-<ng-template #popContent>Bellaraga</ng-template>
-<ng-template #popTitle>bellaraga 2</ng-template>
+<!-- <ng-template #popTitle let-coasterTitle="coasterTitle">{{
+  coasterTitle
+}}</ng-template>
+<ng-template
+  #popContent
+  let-viaCoaster="viaCoaster"
+  let-orariCoaster="orariCoaster"
+  >{{ viaCoaster }}<br />{{ orariCoaster }}</ng-template
+>
 
-<div id="map" class="map">
-  <div
-    id="popup"
-    [ngbPopover]="popContent"
-    popoverTitle="popTitle"
-    #popover="ngbPopover"
-    triggers="manual"
-  ></div>
-</div>
+<div
+  #popup
+  id="popup"
+  [ngbPopover]="popContent"
+  [popoverTitle]="popTitle"
+  #popover="ngbPopover"
+  triggers="manual"
+  (click)="
+    togglePopover(
+      popover,
+      'Coaster Nullo',
+      'Via boh 123, a, b (cd)',
+      'Lun-Ven 00:00-10:00'
+    )
+  "
+></div> -->

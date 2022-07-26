@@ -39,8 +39,19 @@ hr {
   margin: auto;
 }
 
-// :host {
-//   display: flex;
-//   flex-direction: column;
-//   height: 100vh;
-// }
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.map-container {
+  flex-grow: 1;
+  height: 500px;
+  width: 100%;
+}
+
+.map-container a {
+  color: initial !important;
+  text-decoration: initial !important;
+}

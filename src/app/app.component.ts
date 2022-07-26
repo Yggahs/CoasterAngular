@@ -24,6 +24,7 @@ export class AppComponent implements OnInit {
           source: new OSM(),
         }),
       ],
+      target: 'ol-map',
     });
   }
 }
