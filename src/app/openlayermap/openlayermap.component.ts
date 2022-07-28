@@ -74,7 +74,7 @@ export class OpenlayermapComponent implements OnInit, AfterViewInit {
     // View and map
     const view = new View({
       center: fromLonLat([12.656944173001229, 41.45767489956531]),
-      zoom: 14,
+      zoom: 13,
     });
 
     this.map.setView(view);
