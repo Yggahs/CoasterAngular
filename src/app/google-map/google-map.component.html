@@ -1,1 +1,66 @@
-<p>google-map works!</p>
+<div class="d-flex flex-wrap">
+  <div class="col-8 btn-group mx-auto">
+    <button
+      class="btn btn-light col-lg-6 col-12 text-center border"
+      (click)="switchNettuno()"
+    >
+      <img src="\assets\icons8-location-40.png" width="30" height="30" />
+      <h4>Nettuno</h4>
+      <p>Lorem ipsum dolor sit amet</p>
+      <p>consectetur adipiscing elit</p>
+      <p>Mauris sodales purus erat</p>
+      <p>+00 000 000 0000</p>
+    </button>
+    <button
+      class="btn btn-light col-lg-6 col-12 text-center border"
+      (click)="switchAnzio()"
+    >
+      <img src="\assets\icons8-location-40-blue.png" width="30" height="30" />
+      <h4>Anzio</h4>
+      <p>Lorem ipsum dolor sit amet</p>
+      <p>consectetur adipiscing elit</p>
+      <p>Mauris sodales purus erat</p>
+      <p>+00 000 000 0000</p>
+    </button>
+  </div>
+  <div class="mx-auto">
+    <iframe
+      *ngIf="toggleNettuno"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d223.8548049225921!2d12.65693301022404!3d41.457631520464325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1325a31805c59aad%3A0xea26e6138ecc7c52!2sBirreria%20Coaster%20Nettuno!5e0!3m2!1sit!2sus!4v1659454015491!5m2!1sit!2sus"
+      width="800"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <iframe
+      *ngIf="toggleAnzio"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.7105758935213!2d12.627643515304168!3d41.44550127925888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1325a4b12c03ba71%3A0x78a234d45fdc0186!2sBirreria%20Coaster!5e0!3m2!1sit!2sus!4v1659454074825!5m2!1sit!2sus"
+      width="800"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
+
+<!-- <google-map
+  height="500px"
+  width="100%"
+  [zoom]="zoom"
+  [center]="center"
+  [options]="options"
+>
+  <map-marker
+    *ngFor="let marker of markers"
+    [position]="marker.position"
+    [label]="marker.label"
+    [title]="marker.title"
+    [options]="marker.options"
+  >
+  </map-marker
+></google-map> -->

@@ -13,6 +13,7 @@ import { BrandsCarouselComponent } from './brands-carousel/brands-carousel.compo
 
 import { FooterComponent } from './footer/footer.component';
 import { GoogleMapComponent } from './google-map/google-map.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,13 @@ import { GoogleMapComponent } from './google-map/google-map.component';
     FooterComponent,
     GoogleMapComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, NgbCollapseModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    NgbCollapseModule,
+    GoogleMapsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
