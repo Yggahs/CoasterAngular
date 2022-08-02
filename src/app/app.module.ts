@@ -12,7 +12,7 @@ import { TripleIconSectionComponent } from './triple-icon-section/triple-icon-se
 import { BrandsCarouselComponent } from './brands-carousel/brands-carousel.component';
 
 import { FooterComponent } from './footer/footer.component';
-import { OpenlayermapComponent } from './openlayermap/openlayermap.component';
+import { GoogleMapComponent } from './google-map/google-map.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { OpenlayermapComponent } from './openlayermap/openlayermap.component';
     TripleIconSectionComponent,
     BrandsCarouselComponent,
     FooterComponent,
-    OpenlayermapComponent,
+    GoogleMapComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, NgbCollapseModule],
   providers: [],
