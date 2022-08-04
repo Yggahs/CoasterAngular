@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { add } from 'ol/coordinate';
 
 @Component({
   selector: 'app-google-map',
@@ -11,16 +10,16 @@ export class GoogleMapComponent implements OnInit {
 
   toggleNettuno: boolean = true;
   toggleAnzio: boolean = false;
-  markers: any[] = [];
-  image =
-    'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
-  zoom = 14;
-  center!: google.maps.LatLngLiteral;
-  options: google.maps.MapOptions = {
-    mapTypeId: 'roadmap',
-    maxZoom: 25,
-    minZoom: 10,
-  };
+  // markers: any[] = [];
+  // image =
+  //   'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+  // zoom = 14;
+  // center!: google.maps.LatLngLiteral;
+  // options: google.maps.MapOptions = {
+  //   mapTypeId: 'roadmap',
+  //   maxZoom: 25,
+  //   minZoom: 10,
+  // };
 
   ngOnInit(): void {
     // navigator.geolocation.getCurrentPosition((position) => {
